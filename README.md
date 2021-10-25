@@ -5,11 +5,14 @@ Test a method against a list of XSS known.
 Just execute "run.sh", it will start a docker container to do all stuff.
 
 # How I know if my code was successfull ?
-After run the container the dirs below will be created:
+After run the container the dirs/files below will be created:
 
 - html/
   - xss/      <- HTML with XSS
+    - *.html
   - no-xss/   <- HTML with cleanned XSS
+    - *.html
+- xss-report.csv
 
 You should open the HTML to see if XSS is working, if not your code was successfull.
 
