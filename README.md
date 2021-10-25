@@ -8,11 +8,13 @@ Just execute "run.sh", it will start a docker container to do all stuff.
 After run the container the dirs/files below will be created:
 
 - html/
-  - xss/      <- HTML with XSS
-    - *.html
-  - no-xss/   <- HTML with cleanned XSS
-    - *.html
-- xss-report.csv
+  - [timestamp]/
+    - xss/      <- HTML with XSS
+      - *.html
+    - no-xss/   <- HTML with cleanned XSS
+      - *.html
+- report/
+  - report.[timestamp].csv
 
 You should open the HTML to see if XSS is working, if not your code was successfull.
 
